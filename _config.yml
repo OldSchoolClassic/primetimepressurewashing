@@ -1,7 +1,7 @@
 title: "Prime Time Pressure Washing"
 description: "Professional pressure washing for driveways, siding, sidewalks, and more — serving the Pittsburgh area. Free quotes, before & after photos, easy online payment."
-baseurl: ""
-url: "https://REPLACE-WITH-YOUR-DOMAIN-OR-USERNAME.github.io"
+baseurl: "/primetimepressurewashing"
+url: "https://oldschoolclassic.github.io/primetimepressurewashing/"
 author: "Sarha Nicholson"
 email: "REPLACE_WITH_EMAIL@example.com"
 markdown: kramdown
