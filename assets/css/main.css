@@ -1527,3 +1527,293 @@ a.amount-pill:hover {
   display: inline-flex;
   align-items: center;
 }
+
+/* ============================================================
+   CONVERSION COMPONENTS — trust badges, process steps,
+   guarantee banner, FAQ, urgency pill, card hover lift
+   ============================================================ */
+
+/* Subtle alternating section tint for visual rhythm */
+.section-tint {
+  background: linear-gradient(180deg, #eaf4f7 0%, #f4fafb 100%);
+}
+
+/* Card hover lift — applied broadly for a more alive, premium feel */
+.partner-card,
+.pricing-card,
+.feature-card,
+.field-card,
+.testimonial-card,
+.gallery-card {
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+.partner-card:hover,
+.pricing-card:hover,
+.feature-card:hover,
+.field-card:hover,
+.testimonial-card:hover,
+.gallery-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 26px 46px rgba(11, 39, 64, 0.16);
+}
+
+/* Urgency / eyebrow pill */
+.urgency-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  background: rgba(217, 169, 78, 0.16);
+  border: 1px solid rgba(217, 169, 78, 0.4);
+  color: var(--color-clay);
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+.urgency-pill .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  box-shadow: 0 0 0 4px rgba(217, 169, 78, 0.22);
+}
+
+/* Trust badge row */
+.trust-badge-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.trust-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem 1.1rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(13, 27, 38, 0.08);
+  box-shadow: var(--shadow-soft);
+}
+.trust-badge-icon {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(28, 110, 164, 0.14), rgba(79, 195, 217, 0.14));
+  color: var(--color-blue);
+}
+.trust-badge-icon svg { width: 22px; height: 22px; }
+.trust-badge strong {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 0.92rem;
+  color: var(--color-navy);
+}
+.trust-badge span {
+  display: block;
+  margin-top: 0.1rem;
+  font-size: 0.82rem;
+  color: var(--color-muted);
+}
+.trust-badge-row.on-dark .trust-badge {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.14);
+}
+.trust-badge-row.on-dark .trust-badge strong { color: var(--color-linen); }
+.trust-badge-row.on-dark .trust-badge span { color: rgba(255, 255, 255, 0.7); }
+.trust-badge-row.on-dark .trust-badge-icon {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--color-spark);
+}
+
+/* Process steps ("How it works") */
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  position: relative;
+}
+.process-step {
+  position: relative;
+  padding: 1.6rem 1.4rem;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(13, 27, 38, 0.08);
+  box-shadow: var(--shadow-card);
+  text-align: left;
+}
+.process-step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #2b8bc4, #1c6ea4);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  box-shadow: 0 12px 22px rgba(28, 110, 164, 0.3);
+}
+.process-step h3 {
+  margin: 1rem 0 0.4rem;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--color-navy);
+}
+.process-step p {
+  margin: 0;
+  color: var(--color-muted);
+}
+.process-connector {
+  position: absolute;
+  top: 22px;
+  left: calc(100% + 0.75rem);
+  width: calc(1.5rem - 1.5rem);
+}
+
+/* Guarantee banner */
+.guarantee-banner {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.8rem 2rem;
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(11, 39, 64, 0.97), rgba(28, 110, 164, 0.94));
+  color: var(--color-linen);
+  box-shadow: var(--shadow-strong);
+}
+.guarantee-seal {
+  flex: 0 0 auto;
+  width: 88px;
+  height: 88px;
+}
+.guarantee-copy h3 {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-linen);
+}
+.guarantee-copy p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* FAQ (native details/summary — no JS required) */
+.faq-list {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 2rem;
+}
+.faq-item {
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(13, 27, 38, 0.08);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 1.15rem 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: var(--font-ui);
+  font-weight: 700;
+  color: var(--color-navy);
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '+';
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(28, 110, 164, 0.1);
+  color: var(--color-blue);
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+.faq-item[open] summary::after {
+  transform: rotate(45deg);
+}
+.faq-answer {
+  padding: 0 1.3rem 1.25rem;
+  color: var(--color-muted);
+  margin: 0;
+}
+
+/* Stat strip (social proof numbers) */
+.stat-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.stat-strip-item {
+  text-align: center;
+  padding: 1.4rem 1rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+.stat-strip-number {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: var(--color-spark);
+}
+.stat-strip-label {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+/* Wave divider between hero-toned and light sections */
+.wave-divider {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: -1px;
+}
+
+@media (max-width: 1024px) {
+  .trust-badge-row,
+  .stat-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+  .guarantee-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 620px) {
+  .trust-badge-row,
+  .stat-strip {
+    grid-template-columns: 1fr;
+  }
+  .guarantee-banner {
+    padding: 1.5rem 1.25rem;
+  }
+  .faq-item summary {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+}
+

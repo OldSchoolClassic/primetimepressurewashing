@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Satisfaction guaranteed seal">
+  <defs>
+    <linearGradient id="sealGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6bd6f"/>
+      <stop offset="100%" stop-color="#d9a94e"/>
+    </linearGradient>
+  </defs>
+  <path d="M100 10 l14 26 28-10 2 30 30 4-14 26 22 20-26 16 8 29-30-2-8 29-24-18-24 18-8-29-30 2 8-29-26-16 22-20-14-26 30-4 2-30 28 10 z" fill="url(#sealGrad)" stroke="#fff" stroke-width="3"/>
+  <circle cx="100" cy="95" r="52" fill="#0e3457" stroke="#fff" stroke-width="3"/>
+  <text x="100" y="82" text-anchor="middle" font-family="Poppins, sans-serif" font-size="15" font-weight="700" fill="#ffffff">100%</text>
+  <text x="100" y="102" text-anchor="middle" font-family="Inter, sans-serif" font-size="10.5" fill="#dff4f9">SATISFACTION</text>
+  <text x="100" y="116" text-anchor="middle" font-family="Inter, sans-serif" font-size="10.5" fill="#dff4f9">GUARANTEED</text>
+  <path d="M78 178 L60 198 L72 174 Z" fill="#b5762f"/>
+  <path d="M122 178 L140 198 L128 174 Z" fill="#b5762f"/>
+</svg>

@@ -6,19 +6,23 @@ title: "Home"
 <section class="hero" id="home" aria-label="Homepage hero">
   <div class="container hero-grid">
     <div class="hero-copy reveal">
-      <div class="hero-topline">Serving the Pittsburgh Area</div>
-      <h1 class="hero-title">Prime Time<br>Pressure Washing</h1>
-      <p class="hero-subtitle">Driveways, siding, sidewalks &amp; more — restored to like-new.</p>
-      <p class="hero-note">Family-owned and locally operated. We show up on time, do the job right, and leave your property looking its best.</p>
+      <div class="hero-topline">
+        <span class="urgency-pill" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.22); color: #fff;">
+          <span class="dot"></span> Now booking in the Pittsburgh area
+        </span>
+      </div>
+      <h1 class="hero-title">Your Property's<br>Best Look, Restored.</h1>
+      <p class="hero-subtitle">Driveways, siding, sidewalks, decks &amp; more — cleaned like we're doing it for our own home.</p>
+      <p class="hero-note">Family-owned and locally operated. Free quotes, honest pricing, and a satisfaction guarantee on every job — no exceptions.</p>
       <div class="btn-row hero-actions">
-        <a class="btn btn-primary" href="{{ '/quote/' | relative_url }}">Get a Free Quote</a>
+        <a class="btn btn-primary" href="{{ '/quote/' | relative_url }}">Get My Free Quote →</a>
         <a class="btn btn-secondary" href="{{ '/gallery/' | relative_url }}">See Before &amp; Afters</a>
       </div>
       <div class="hero-stats">
-        <div class="stat-chip"><strong>Free Quotes</strong><span>no obligation</span></div>
-        <div class="stat-chip"><strong>Pittsburgh, PA</strong><span>local &amp; family-owned</span></div>
+        <div class="stat-chip"><strong>Free</strong><span>no-obligation quotes</span></div>
+        <div class="stat-chip"><strong>100%</strong><span>satisfaction guarantee</span></div>
         <div class="stat-chip"><strong>Easy Pay</strong><span>PayPal · Venmo · Cash App</span></div>
-        <div class="stat-chip"><strong>Driveways to Decks</strong><span>full-service cleaning</span></div>
+        <div class="stat-chip"><strong>Pittsburgh</strong><span>locally owned &amp; operated</span></div>
       </div>
       <div class="scroll-cue"><span>See what we do</span><span class="scroll-line"></span></div>
     </div>
@@ -28,22 +32,44 @@ title: "Home"
       </div>
       <div class="hero-card-body">
         <h2>See the difference.</h2>
-        <p>One pass and years of grime, mold, and buildup are gone. Real results, every job.</p>
+        <p>One visit and years of grime, mold, and buildup are gone. Real results — every single job.</p>
       </div>
     </aside>
   </div>
 </section>
 
-<section class="mission-bar section-compact" aria-label="Quick facts">
-  <div class="container surface mission-bar-grid reveal">
-    <div class="mission-item"><strong>Free Estimates</strong><span>No cost, no pressure — just an honest quote</span></div>
-    <div class="mission-item"><strong>Fully Insured Care</strong><span>Careful, respectful work on your property</span></div>
-    <div class="mission-item"><strong>Flexible Payment</strong><span>PayPal, Venmo, Cash App, or cash/check</span></div>
-    <div class="mission-item"><strong>Satisfaction First</strong><span>We're not done until you're happy with it</span></div>
+<section class="section section-compact" aria-label="Why homeowners choose us">
+  <div class="container">
+    <div class="trust-badge-row reveal">
+      <div class="trust-badge">
+        <span class="trust-badge-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+        </span>
+        <span><strong>Fully Insured</strong><span>Careful work, protected property</span></span>
+      </div>
+      <div class="trust-badge">
+        <span class="trust-badge-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        </span>
+        <span><strong>On-Time, Every Time</strong><span>We respect your schedule</span></span>
+      </div>
+      <div class="trust-badge">
+        <span class="trust-badge-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7z"/></svg>
+        </span>
+        <span><strong>Satisfaction Guaranteed</strong><span>We're not done until you love it</span></span>
+      </div>
+      <div class="trust-badge">
+        <span class="trust-badge-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+        </span>
+        <span><strong>Pay Your Way</strong><span>PayPal, Venmo, Cash App, or check</span></span>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section section-tint">
   <div class="container about-grid">
     <div class="about-image-panel surface reveal">
       <img loading="lazy" src="{{ '/assets/images/about-owner.svg' | relative_url }}" alt="Sarha Nicholson, owner of Prime Time Pressure Washing" />
@@ -53,17 +79,47 @@ title: "Home"
       </div>
     </div>
     <div class="about-content surface reveal">
-      <span class="eyebrow">Welcome</span>
-      <h2 class="section-title">A local, personal touch for a spotless property.</h2>
+      <span class="eyebrow">Why homeowners choose us</span>
+      <h2 class="section-title">A local, personal touch — not a call center.</h2>
       <div class="about-copy stack">
         <p>Prime Time Pressure Washing is a small, local business built on doing right by our neighbors. Whether it's a grimy driveway, mildew-stained siding, or a sidewalk that's seen better days, we treat every property like it's our own.</p>
-        <p>We keep things simple: send us a few photos, get a free quote, and book a time that works for you. No hidden fees, no surprises — just a clean, refreshed property when we're done.</p>
+        <p>We keep things simple: send a few photos, get a free quote back fast, and book a time that works for you. No hidden fees, no upsells, no surprises at the end — just a clean, refreshed property and a fair price.</p>
       </div>
       <div class="btn-row" style="margin-top: 1.2rem;">
         <a class="btn btn-outline" href="{{ '/about/' | relative_url }}">Meet Sarha</a>
         <a class="btn btn-outline" href="{{ '/services/' | relative_url }}">Services &amp; Pricing</a>
         <a class="btn btn-primary" href="{{ '/quote/' | relative_url }}">Get a Free Quote</a>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="eyebrow">How it works</span>
+      <h2 class="section-title">Three steps to a spotless property.</h2>
+      <p class="section-intro">No site visits required to get a price, no waiting around for a callback — here's exactly what happens.</p>
+    </div>
+    <div class="process-steps reveal">
+      <article class="process-step">
+        <span class="process-step-number">1</span>
+        <h3>Get your free quote</h3>
+        <p>Tell us what needs cleaning and send a few photos if you can. We'll follow up quickly with a clear, honest price — no obligation.</p>
+      </article>
+      <article class="process-step">
+        <span class="process-step-number">2</span>
+        <h3>We schedule &amp; clean</h3>
+        <p>Pick a day that works for you. We show up on time, do the job carefully, and treat your property like our own.</p>
+      </article>
+      <article class="process-step">
+        <span class="process-step-number">3</span>
+        <h3>You relax &amp; pay easy</h3>
+        <p>Once you're happy with the results, pay however is easiest — PayPal, Venmo, Cash App, or the old-fashioned way.</p>
+      </article>
+    </div>
+    <div class="text-center reveal" style="margin-top: 2.25rem;">
+      <a class="btn btn-primary" href="{{ '/quote/' | relative_url }}">Start With a Free Quote</a>
     </div>
   </div>
 </section>
@@ -75,48 +131,48 @@ title: "Home"
   </div>
 </section>
 
-<section class="section">
+<section class="section section-tint">
   <div class="container">
     <div class="text-center reveal">
       <span class="eyebrow">What we clean</span>
       <h2 class="section-title">From driveways to decks, we've got it covered.</h2>
-      <p class="section-intro">Every property is different — here's a look at the most common jobs we handle, with straightforward pricing.</p>
+      <p class="section-intro">Every property is different — here's a look at the most common jobs we handle, with straightforward, no-surprise pricing.</p>
     </div>
     <div class="card-grid-3 reveal">
       <article class="partner-card surface">
         <div class="partner-icon">🚗</div>
         <h3>Driveways</h3>
-        <p>Years of oil stains, dirt, and grime lifted away. Every driveway is sized up individually for an accurate quote.</p>
+        <p>Years of oil stains, dirt, and grime lifted away. Every driveway is sized up individually so your quote is accurate — not a rough guess.</p>
         <a class="btn btn-outline" href="{{ '/services/' | relative_url }}">See Pricing</a>
       </article>
       <article class="partner-card surface">
         <div class="partner-icon">🏠</div>
         <h3>House Siding</h3>
-        <p>Soft washing that removes mold, algae, and buildup without damaging your siding — priced by square footage.</p>
+        <p>Gentle soft washing lifts mold, algae, and buildup without damaging your siding — priced fairly by square footage.</p>
         <a class="btn btn-outline" href="{{ '/services/' | relative_url }}">See Pricing</a>
       </article>
       <article class="partner-card surface">
         <div class="partner-icon">🚶</div>
         <h3>Sidewalks &amp; Walkways</h3>
-        <p>Concrete brightened back up, safer footing, and a tidier curb appeal — priced per 100 ft.</p>
+        <p>Brighten up your concrete, improve safety, and boost curb appeal — priced simply per 100 ft.</p>
         <a class="btn btn-outline" href="{{ '/services/' | relative_url }}">See Pricing</a>
       </article>
       <article class="partner-card surface">
         <div class="partner-icon">🗑️</div>
         <h3>Trash Cans</h3>
-        <p>Say goodbye to the smell and grime. A fast, affordable refresh for your bins.</p>
+        <p>Say goodbye to the smell and grime for good. A fast, affordable refresh that makes a bigger difference than you'd expect.</p>
         <a class="btn btn-outline" href="{{ '/services/' | relative_url }}">See Pricing</a>
       </article>
       <article class="partner-card surface">
         <div class="partner-icon">🚙</div>
         <h3>Cars &amp; SUVs</h3>
-        <p>A thorough exterior rinse and wash to knock off road grime and give your vehicle a fresh shine.</p>
+        <p>A thorough exterior rinse and wash that knocks off road grime and leaves your vehicle looking freshly detailed.</p>
         <a class="btn btn-outline" href="{{ '/services/' | relative_url }}">See Pricing</a>
       </article>
       <article class="partner-card surface">
         <div class="partner-icon">🧱</div>
         <h3>Concrete &amp; Patios</h3>
-        <p>Patios, walkways, and other concrete surfaces cleaned and restored — priced by square footage.</p>
+        <p>Patios, walkways, and other concrete surfaces cleaned and restored so you can actually enjoy them again.</p>
         <a class="btn btn-primary" href="{{ '/quote/' | relative_url }}">Get a Free Quote</a>
       </article>
     </div>
@@ -152,6 +208,14 @@ title: "Home"
         <div class="gallery-caption"><strong>House Siding</strong><span>After</span></div>
       </article>
     </div>
+
+    <div class="stat-strip reveal">
+      <div class="stat-strip-item"><span class="stat-strip-number">100%</span><span class="stat-strip-label">Satisfaction guaranteed</span></div>
+      <div class="stat-strip-item"><span class="stat-strip-number">24 hr</span><span class="stat-strip-label">Typical quote turnaround</span></div>
+      <div class="stat-strip-item"><span class="stat-strip-number">$0</span><span class="stat-strip-label">Cost to get a quote</span></div>
+      <div class="stat-strip-item"><span class="stat-strip-number">5★</span><span class="stat-strip-label">Goal on every job</span></div>
+    </div>
+
     <div class="text-center reveal" style="margin-top: 2.25rem;">
       <a class="btn btn-secondary" href="{{ '/gallery/' | relative_url }}">View Full Gallery</a>
     </div>
@@ -159,16 +223,26 @@ title: "Home"
 </section>
 
 <section class="section">
-  <div class="container" style="text-align: center;">
-    <div class="reveal">
-      <span class="eyebrow">Ready when you are</span>
-      <h2 class="section-title">Get your free quote today.</h2>
-      <p class="section-intro">Send a few photos and details about your property — we'll get back to you with a straightforward price, no pressure.</p>
-      <div class="btn-row" style="justify-content: center; margin-top: 1.5rem;">
-        <a class="btn btn-outline" href="{{ '/services/' | relative_url }}">Services &amp; Pricing</a>
-        <a class="btn btn-outline" href="{{ '/payment/' | relative_url }}">Pay Online</a>
-        <a class="btn btn-primary" href="{{ '/quote/' | relative_url }}">Get a Free Quote</a>
+  <div class="container">
+    <div class="guarantee-banner reveal">
+      <img class="guarantee-seal" src="{{ '/assets/images/guarantee-seal.svg' | relative_url }}" alt="100% satisfaction guarantee seal" />
+      <div class="guarantee-copy">
+        <h3>Our promise: you'll love the results, guaranteed.</h3>
+        <p>If something isn't right, tell us and we'll make it right — that's not a slogan, it's how we run this business. No pressure, no hidden fees, just honest work done well.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-tint" style="text-align: center;">
+  <div class="container reveal">
+    <span class="eyebrow">Ready when you are</span>
+    <h2 class="section-title">Get your free quote today — takes less than a minute.</h2>
+    <p class="section-intro">Send a few photos and details about your property. We'll get back to you fast with a straightforward price and zero pressure.</p>
+    <div class="btn-row" style="justify-content: center; margin-top: 1.5rem;">
+      <a class="btn btn-outline" href="{{ '/services/' | relative_url }}">Services &amp; Pricing</a>
+      <a class="btn btn-outline" href="{{ '/payment/' | relative_url }}">Pay Online</a>
+      <a class="btn btn-primary" href="{{ '/quote/' | relative_url }}">Get My Free Quote →</a>
     </div>
   </div>
 </section>
