@@ -32,9 +32,9 @@ Search the project for these placeholders and replace them:
 - **`_config.yml`** — `url`, `email`
 - **`pages/payment.html`** — `REPLACE_WITH_PAYPAL_USERNAME`, `REPLACE_WITH_VENMO_USERNAME`,
   `REPLACE_WITH_CASHTAG` (your real PayPal.me, Venmo, and Cash App handles)
-- **`pages/quote.html`** — `REPLACE_WITH_PHONE`, `REPLACE_WITH_EMAIL@example.com`,
-  `YOUR_FORMSPREE_ID` (sign up free at formspree.io to make the contact form actually
-  send you emails), `REPLACE_WITH_FACEBOOK`
+- **`pages/quote.html`** — `YOUR_FORMSPREE_ID` (sign up free at formspree.io to make the contact
+  form actually send you emails); phone (412.923.8797) and email (snclean05@gmail.com) are
+  already filled in
 - **`_includes/footer.html`** — `REPLACE_WITH_FACEBOOK`, `REPLACE_WITH_INSTAGRAM`
 - **`pages/gallery.html`** — `REPLACE_WITH_YOUTUBE_VIDEO_ID`, `REPLACE_WITH_FACEBOOK_VIDEO_URL`,
   and the testimonial placeholders (swap in real customer reviews)
