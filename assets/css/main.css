@@ -221,11 +221,18 @@ body::before {
   display: grid;
   place-items: center;
   border-radius: 14px;
-  background: linear-gradient(180deg, rgba(79, 195, 217, 0.25), rgba(28, 110, 164, 0.2));
+  background: #ffffff;
   border: 1px solid rgba(79, 195, 217, 0.5);
   color: var(--color-spark);
   font-family: var(--font-display);
   font-weight: 700;
+  overflow: hidden;
+  padding: 4px;
+}
+.nav-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .nav-brand-text {
   display: flex;
@@ -1128,11 +1135,18 @@ a.amount-pill:hover {
   border-radius: 18px;
   display: grid;
   place-items: center;
-  background: rgba(79, 195, 217, 0.16);
+  background: #ffffff;
   border: 1px solid rgba(79, 195, 217, 0.32);
   color: var(--color-spark);
   font-family: var(--font-display);
   font-weight: 700;
+  overflow: hidden;
+  padding: 5px;
+}
+.footer-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .footer-brand h2 {
   margin: 0;
