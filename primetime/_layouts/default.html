@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:description" content="{{ site.description }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta property="og:image" content="{{ '/assets/images/og-card.svg' | absolute_url }}" />
+  <!-- Performance: preconnect to Google Fonts to speed up font loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}" />
+  <!-- Performance: load CSS with high priority, defer non-critical work to JS -->
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+  {% seo %}
+</head>
+<body>
+  {% include nav.html %}
+  {% include mobile-nav.html %}
+  <main>
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  <!-- Performance: JS loads after page content so it never blocks rendering -->
+  <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
+</body>
+</html>

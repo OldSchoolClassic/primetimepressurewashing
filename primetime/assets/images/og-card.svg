@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Prime Time Pressure Washing">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e3457" />
+      <stop offset="55%" stop-color="#1c6ea4" />
+      <stop offset="100%" stop-color="#4fc3d9" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0.18" cy="0.18" r="0.9">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.28)" />
+      <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+    </radialGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg)" />
+  <rect width="100%" height="100%" fill="url(#glow)" opacity="0.5" />
+  <circle cx="216.0" cy="138.6" r="56.699999999999996" fill="rgba(255,255,255,0.10)" />
+  <circle cx="983.9999999999999" cy="113.39999999999999" r="37.8" fill="rgba(217,169,78,0.20)" />
+  <circle cx="912.0" cy="491.40000000000003" r="81.9" fill="rgba(255,255,255,0.07)" />
+  <path d="M0 504.0 C 216.0 453.59999999999997, 396.0 592.1999999999999, 624.0 529.1999999999999 S 1008.0 415.8, 1200 491.40000000000003 V 630 H 0 Z" fill="rgba(255,255,255,0.12)"/>
+  <path d="M0 100.8 C 192.0 176.4, 408.00000000000006 0, 648.0 88.2 S 1008.0 176.4, 1200 63.0 V0 H0 Z" fill="rgba(255,255,255,0.07)"/>
+  <text x="50%" y="296.09999999999997" text-anchor="middle" font-family="Poppins, sans-serif" font-size="34.65" font-weight="700" fill="rgba(255,255,255,0.92)">Prime Time Pressure Washing</text>
+  <text x="50%" y="343.34999999999997" text-anchor="middle" font-family="Inter, sans-serif" font-size="20.16" fill="rgba(255,255,255,0.7)">Add your logo / hero photo here</text>
+</svg>

@@ -1,0 +1,93 @@
+---
+layout: default
+title: "Get a Quote"
+permalink: /quote/
+---
+
+<section class="blog-hero">
+  <div class="container reveal">
+    <span class="eyebrow" style="color: rgba(255,255,255,0.74);">Get a Quote</span>
+    <h1 class="section-title" style="color: var(--color-linen);">Let's get your property looking its best.</h1>
+    <p class="section-intro" style="color: rgba(255,255,255,0.76);">Tell us a little about the job and we'll follow up with a free, no-obligation quote.</p>
+  </div>
+</section>
+
+<section class="section" id="contact-help">
+  <div class="container contact-grid">
+    <article class="contact-panel surface reveal">
+      <span class="eyebrow">Get in touch</span>
+      <h2 class="section-title">Questions or ready to book?</h2>
+      <p style="color: var(--color-muted); margin: 0.75rem 0 1.25rem;">Reach out using the form, or connect with us directly using the details below.</p>
+      <div class="contact-list">
+        <div class="contact-item">
+          <strong>Phone</strong>
+          <!-- REPLACE with real phone number -->
+          <a href="tel:REPLACE_WITH_PHONE">REPLACE_WITH_PHONE</a>
+        </div>
+        <div class="contact-item">
+          <strong>Email</strong>
+          <!-- REPLACE with real email address -->
+          <a href="mailto:REPLACE_WITH_EMAIL@example.com">REPLACE_WITH_EMAIL@example.com</a>
+        </div>
+        <div class="contact-item">
+          <strong>Facebook</strong>
+          <a href="https://www.facebook.com/REPLACE_WITH_FACEBOOK" target="_blank" rel="noopener noreferrer">Follow on Facebook</a>
+        </div>
+        <div class="contact-item">
+          <strong>Service area</strong>
+          <span>Pittsburgh, PA and surrounding areas</span>
+        </div>
+        <div class="contact-item">
+          <strong>Pay online</strong>
+          <a href="{{ '/payment/' | relative_url }}">PayPal, Venmo, or Cash App</a>
+        </div>
+      </div>
+    </article>
+    <article class="form-panel surface reveal">
+      <span class="eyebrow">Request your free quote</span>
+      <h2 class="section-title">Tell us about the job.</h2>
+      <!-- REPLACE the form action below with your Formspree ID (or another form backend) to activate this form -->
+      <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+        <div class="form-grid">
+          <div><label class="form-label" for="name">Name</label><input class="input" id="name" name="name" type="text" placeholder="Your name" required /></div>
+          <div><label class="form-label" for="phone">Phone</label><input class="input" id="phone" name="phone" type="tel" placeholder="Your phone number" required /></div>
+          <div class="full"><label class="form-label" for="email">Email</label><input class="input" id="email" name="email" type="email" placeholder="you@example.com" required /></div>
+          <div class="full"><label class="form-label" for="address">Property address</label><input class="input" id="address" name="address" type="text" placeholder="Street address, city" /></div>
+          <div class="full"><label class="form-label" for="service">What needs cleaning?</label>
+            <select class="select" id="service" name="service">
+              <option>Driveway</option>
+              <option>House siding</option>
+              <option>Sidewalk / walkway</option>
+              <option>Trash can(s)</option>
+              <option>Car / SUV</option>
+              <option>Concrete / patio</option>
+              <option>Deck</option>
+              <option>Something else / multiple services</option>
+            </select>
+          </div>
+          <div class="full"><label class="form-label" for="message">Tell us more</label><textarea class="textarea" id="message" name="message" placeholder="Approximate size, number of items, current condition, photos you can send, preferred timing, etc." required></textarea></div>
+          <div class="full"><button class="btn btn-primary" type="submit">Request my free quote</button></div>
+        </div>
+      </form>
+      <p class="muted-note" style="margin-top: 0.75rem;">Replace YOUR_FORMSPREE_ID with your free Formspree form ID (formspree.io) to activate this contact form.</p>
+    </article>
+  </div>
+</section>
+
+<section class="banner-verse reveal">
+  <div class="container">
+    <blockquote>"No pressure, no hidden fees — just an honest quote and a job done right."</blockquote>
+    <cite>Prime Time Pressure Washing</cite>
+  </div>
+</section>
+
+<section class="section" style="text-align: center;">
+  <div class="container reveal">
+    <span class="eyebrow">While you wait</span>
+    <h2 class="section-title">Take a look at our work.</h2>
+    <div class="btn-row" style="justify-content: center; margin-top: 1.5rem;">
+      <a class="btn btn-outline" href="{{ '/gallery/' | relative_url }}">Before &amp; After Gallery</a>
+      <a class="btn btn-outline" href="{{ '/services/' | relative_url }}">Services &amp; Pricing</a>
+    </div>
+  </div>
+</section>

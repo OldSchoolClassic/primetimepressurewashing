@@ -1,0 +1,77 @@
+---
+layout: default
+title: "Pay Online"
+permalink: /payment/
+---
+
+<section class="blog-hero">
+  <div class="container reveal">
+    <span class="eyebrow" style="color: rgba(255,255,255,0.74);">Pay Online</span>
+    <h1 class="section-title" style="color: var(--color-linen);">Quick, Easy Payment</h1>
+    <p class="section-intro" style="color: rgba(255,255,255,0.76);">Pay for your completed job using whichever method is easiest for you.</p>
+  </div>
+</section>
+
+<section class="section donate-shell">
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom: 1rem;">
+      <span class="eyebrow" style="color: rgba(255,255,255,0.7);">Choose your payment method</span>
+      <h2 class="section-title" style="color: var(--color-linen);">Three easy ways to pay.</h2>
+      <p class="section-intro" style="color: rgba(255,255,255,0.72);">Tap a button below to open the app and send your payment. Cash and check are always welcome too.</p>
+    </div>
+
+    <div class="pay-method-grid reveal">
+      <div class="pay-method-card">
+        <div class="pay-method-icon" style="background: linear-gradient(180deg, rgba(0,112,201,0.3), rgba(0,48,135,0.3)); color: #eaf4ff;">PP</div>
+        <h3>PayPal</h3>
+        <p>Pay securely by card or PayPal balance — no account required.</p>
+        <!-- REPLACE with your actual PayPal.me link -->
+        <a class="btn btn-primary" href="https://www.paypal.com/paypalme/REPLACE_WITH_PAYPAL_USERNAME" target="_blank" rel="noopener noreferrer" style="width: 100%; justify-content: center;">Pay with PayPal</a>
+      </div>
+      <div class="pay-method-card">
+        <div class="pay-method-icon" style="background: linear-gradient(180deg, rgba(61,175,235,0.3), rgba(0,133,201,0.3)); color: #eaf9ff;">V</div>
+        <h3>Venmo</h3>
+        <p>Send payment directly through the Venmo app.</p>
+        <!-- REPLACE with your actual Venmo username -->
+        <a class="btn btn-primary" href="https://venmo.com/REPLACE_WITH_VENMO_USERNAME" target="_blank" rel="noopener noreferrer" style="width: 100%; justify-content: center;">Pay with Venmo</a>
+      </div>
+      <div class="pay-method-card">
+        <div class="pay-method-icon" style="background: linear-gradient(180deg, rgba(0,210,120,0.3), rgba(0,150,90,0.3)); color: #eafff2;">$</div>
+        <h3>Cash App</h3>
+        <p>Send your payment using your Cash App balance or linked card.</p>
+        <!-- REPLACE with your actual Cash App $Cashtag -->
+        <a class="btn btn-primary" href="https://cash.app/$REPLACE_WITH_CASHTAG" target="_blank" rel="noopener noreferrer" style="width: 100%; justify-content: center;">Pay with Cash App</a>
+      </div>
+    </div>
+
+    <div class="embed-placeholder reveal" style="margin-top: 2rem;">
+      <strong>Setting up your payment links</strong>
+      <p>Replace <code>REPLACE_WITH_PAYPAL_USERNAME</code>, <code>REPLACE_WITH_VENMO_USERNAME</code>, and <code>REPLACE_WITH_CASHTAG</code> in <code>pages/payment.html</code> with your real PayPal.me, Venmo, and Cash App usernames once your accounts are set up.</p>
+    </div>
+
+    <div class="text-center reveal" style="margin-top: 2rem;">
+      <p style="color: rgba(255,255,255,0.78);">Prefer cash or check? That works too — just let us know when you book your job.</p>
+    </div>
+  </div>
+</section>
+
+<section class="banner-verse reveal">
+  <div class="container">
+    <blockquote>"Simple, secure, and on your terms — pay however works best for you."</blockquote>
+    <cite>Prime Time Pressure Washing</cite>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="eyebrow">Have a question about your invoice?</span>
+      <h2 class="section-title">We're happy to help.</h2>
+      <p class="section-intro">Reach out anytime if you have a question about your quote, job, or payment.</p>
+      <div class="btn-row" style="justify-content: center; margin-top: 1.5rem;">
+        <a class="btn btn-outline" href="{{ '/quote/' | relative_url }}">Contact Us</a>
+        <a class="btn btn-outline" href="{{ '/services/' | relative_url }}">Services &amp; Pricing</a>
+      </div>
+    </div>
+  </div>
+</section>
