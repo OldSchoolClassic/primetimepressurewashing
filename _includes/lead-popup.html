@@ -1,0 +1,17 @@
+<div class="lead-popup-overlay" id="leadPopup" aria-hidden="true">
+  <div class="lead-popup" role="dialog" aria-modal="true" aria-labelledby="leadPopupTitle">
+    <button class="lead-popup-close" id="leadPopupClose" aria-label="Close">✕</button>
+    <span class="lead-popup-badge">Limited-Time Offer</span>
+    <h2 id="leadPopupTitle">Get $20 Off Your First Cleaning</h2>
+    <p class="lead-popup-copy">Leave your name and number and we'll send you a code for $20 off any first-time service — driveways, siding, sidewalks, and more.</p>
+    <!-- REPLACE the form action below with your Formspree ID (or another form backend) to activate this form -->
+    <form class="lead-popup-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="tel" name="phone" placeholder="Your phone number" required />
+      <input type="email" name="email" placeholder="Your email" required />
+      <button class="btn btn-primary" type="submit">Send Me My $20 Off</button>
+    </form>
+    <p class="lead-popup-note">No spam — just your discount code and an occasional reminder when it's time for a refresh.</p>
+    <button class="lead-popup-dismiss" id="leadPopupDismiss" type="button">No thanks, I'll pay full price</button>
+  </div>
+</div>

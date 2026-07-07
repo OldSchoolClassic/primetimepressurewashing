@@ -3,6 +3,8 @@ layout: default
 title: "Home"
 ---
 
+{% include lead-popup.html %}
+
 <section class="hero" id="home" aria-label="Homepage hero">
   <div class="container hero-grid">
     <div class="hero-copy reveal">
@@ -86,7 +88,7 @@ title: "Home"
         <p>We keep things simple: send a few photos, get a free quote back fast, and book a time that works for you. No hidden fees, no upsells, no surprises at the end — just a clean, refreshed property and a fair price.</p>
       </div>
       <div class="btn-row" style="margin-top: 1.2rem;">
-        <a class="btn btn-outline" href="{{ '/about/' | relative_url }}">Meet Sarha</a>
+        <a class="btn btn-outline" href="{{ '/about/' | relative_url }}">About Us</a>
         <a class="btn btn-outline" href="{{ '/services/' | relative_url }}">Services &amp; Pricing</a>
         <a class="btn btn-primary" href="{{ '/quote/' | relative_url }}">Get a Free Quote</a>
       </div>

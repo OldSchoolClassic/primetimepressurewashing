@@ -103,4 +103,39 @@ document.addEventListener('DOMContentLoaded', () => {
       wrap.querySelector('.video-poster').replaceWith(iframe);
     });
   });
+
+  // Lead magnet popup (homepage only)
+  const leadPopup = document.getElementById('leadPopup');
+  if (leadPopup) {
+    const LEAD_KEY = 'ptpw_lead_popup_seen';
+    const closeBtn = document.getElementById('leadPopupClose');
+    const dismissBtn = document.getElementById('leadPopupDismiss');
+
+    const openLeadPopup = () => {
+      if (localStorage.getItem(LEAD_KEY)) return;
+      leadPopup.classList.add('open');
+      leadPopup.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    };
+    const closeLeadPopup = () => {
+      leadPopup.classList.remove('open');
+      leadPopup.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      localStorage.setItem(LEAD_KEY, '1');
+    };
+
+    setTimeout(openLeadPopup, 6000);
+
+    if (closeBtn) closeBtn.addEventListener('click', closeLeadPopup);
+    if (dismissBtn) dismissBtn.addEventListener('click', closeLeadPopup);
+    leadPopup.addEventListener('click', (event) => {
+      if (event.target === leadPopup) closeLeadPopup();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && leadPopup.classList.contains('open')) closeLeadPopup();
+    });
+    leadPopup.querySelector('form')?.addEventListener('submit', () => {
+      localStorage.setItem(LEAD_KEY, '1');
+    });
+  }
 });
