@@ -191,7 +191,7 @@ body::before {
   inset: 0 0 auto 0;
   z-index: 1000;
   padding: 1rem 0;
-  background: linear-gradient(180deg, rgba(10, 10, 10, 0.76), rgba(10, 10, 10, 0.14));
+  background: linear-gradient(180deg, rgba(15, 5, 6, 0.82), rgba(10, 10, 10, 0.18));
   transition: padding 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
   backdrop-filter: blur(8px);
 }
@@ -311,7 +311,7 @@ body::before {
 .mobile-shell {
   width: min(420px, 100%);
   margin-left: auto;
-  background: linear-gradient(180deg, rgba(10, 10, 10, 0.97), rgba(26, 26, 26, 0.97));
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.97), rgba(35, 9, 12, 0.97));
   border: 1px solid rgba(230, 57, 70, 0.3);
   border-radius: 28px;
   box-shadow: var(--shadow-strong);
@@ -751,7 +751,7 @@ body::before {
 }
 
 .field-band {
-  background: linear-gradient(180deg, rgba(10, 10, 10, 0.98), rgba(17, 17, 17, 0.98));
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.98) 0%, rgba(30, 8, 10, 0.98) 55%, rgba(50, 10, 14, 0.98) 100%);
   color: var(--color-linen);
 }
 .field-band .section-title,
@@ -879,7 +879,7 @@ body::before {
 .banner-verse {
   padding: clamp(3.5rem, 6vw, 5rem) 0;
   background:
-    linear-gradient(180deg, rgba(10, 10, 10, 0.94), rgba(17, 17, 17, 0.94)),
+    linear-gradient(180deg, rgba(15, 5, 6, 0.94), rgba(35, 9, 12, 0.94)),
     url('../images/verse-banner.svg') center/cover no-repeat;
   color: var(--color-linen);
 }
@@ -930,7 +930,7 @@ body::before {
 }
 
 .donate-shell {
-  background: linear-gradient(135deg, rgba(10, 10, 10, 0.98), rgba(17, 17, 17, 0.98));
+  background: linear-gradient(135deg, rgba(10, 10, 10, 0.98) 0%, rgba(35, 9, 12, 0.98) 50%, rgba(60, 12, 16, 0.98) 100%);
   color: var(--color-linen);
 }
 .donate-shell .section-title,
@@ -1136,7 +1136,7 @@ a.amount-pill:hover {
 .site-footer {
   position: relative;
   z-index: 2;
-  background: #071522;
+  background: #0a0a0a;
   color: rgba(255, 255, 255, 0.82);
   padding: 3rem 0;
 }
@@ -1230,7 +1230,7 @@ a.amount-pill:hover {
 .blog-hero {
   padding: calc(var(--hero-space-top) + 1.5rem) 0 4rem;
   background:
-    linear-gradient(135deg, rgba(10, 10, 10, 0.88), rgba(17, 17, 17, 0.8)),
+    linear-gradient(135deg, rgba(15, 5, 6, 0.88), rgba(35, 9, 12, 0.8)),
     url('../images/hero-pressure.jpg') center/cover no-repeat;
   color: var(--color-linen);
 }
@@ -1685,7 +1685,7 @@ a.amount-pill:hover {
 
 /* Subtle alternating section tint for visual rhythm */
 .section-tint {
-  background: linear-gradient(180deg, #f0f0f0 0%, #f7f7f7 100%);
+  background: linear-gradient(180deg, #f7f0f0 0%, #faf5f5 100%);
 }
 
 /* Card hover lift — applied broadly for a more alive, premium feel */
