@@ -772,6 +772,9 @@ body::before {
   gap: 1rem;
   align-items: start;
 }
+.gallery-grid-2 {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+}
 .gallery-lead .card-body {
   padding-top: 1rem;
 }
@@ -1343,6 +1346,9 @@ a.amount-pill:hover {
   }
   .gallery-stack {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .gallery-stack-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .card-grid-4 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
