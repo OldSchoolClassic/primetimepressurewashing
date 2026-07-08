@@ -11,7 +11,17 @@ document.addEventListener('DOMContentLoaded', () => {
     else nav.classList.remove('scrolled');
   };
   syncNav();
-  window.addEventListener('scroll', syncNav, { passive: true });
+  // Performance: rAF-throttled so this runs at most once per frame instead of on every
+  // scroll event, which avoids layout thrashing during fast scrolling.
+  let navScrollTicking = false;
+  window.addEventListener('scroll', () => {
+    if (navScrollTicking) return;
+    navScrollTicking = true;
+    requestAnimationFrame(() => {
+      syncNav();
+      navScrollTicking = false;
+    });
+  }, { passive: true });
 
   const openMobile = () => {
     if (!mobileNav) return;
